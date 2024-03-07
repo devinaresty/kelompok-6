@@ -1,0 +1,271 @@
+#style.css
+ 
+
+:active a {
+    background-color: aqua;
+    border-radius: 15px;
+    color: brown;
+}
+
+body {
+    background-color: antiquewhite(221, 218, 218);
+    margin:0;
+    font-family: 'open sans', sans-serif;
+}
+
+hr {
+    border: 0;
+    background: ivory;
+    height: 2px;
+}
+
+header img {
+    margin-top: spx;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    color: darkslategray;
+}
+
+header .judul {
+    font-size: 17px;
+}
+
+header .deskripsi{
+    font-size: 11px;
+}
+
+.wrap {
+    width: 950px;
+    margin:25px auto;
+}
+nav.menu ul {
+    overflow: hidden;
+    color:black;
+    list-style: none;
+    float: left;
+    padding: 0px;
+    width: 850px;
+    margin:0 0 0;
+    background: aqua(2, 120, 150);
+    border-radius: 15px;
+    display: flex;
+    font-family: 'segoe UI',  Verdana, Geneva, Tahoma, sans-serif;
+    color: darkred;
+    transform: translateX(5rem);
+    
+}
+nav.menu ul li {
+    margin: 15px;
+    float:left;
+    flex: 1;
+}
+
+nav.menu ul a {
+    padding:10px;
+    display:block; 
+    font-weight:600;  
+    font-size: 16px;
+    color:black;
+    text-transform: uppercase; 
+    transition: all 0.5s ease; 
+    text-decoration: none;
+    text-align: center;  
+    }
+    .active a{
+        color: red;
+    }
+nav.menu ul :hover {
+    text-decoration: underline;
+    border-radius: 15px;
+    background: floralwhite;
+    /*margin: 0.02px;*/
+    color: aqua(2, 120, 150);
+}
+.sidebar {
+    float:right;
+    width:200;
+}
+.widget-pict{
+    border-radius: 8px;
+}
+.sidebar .widget {
+    width: 50;
+    padding: 25px;
+    margin:0 0 25px;
+    background: #fff;
+    border-bottom: 2px solid #fff;
+    transition: all 0.5 ease;
+    border-radius: 10px;
+    border: 1px solid rgb(10, 128, 238, 0.55);
+    transform: translateX(7rem);
+}
+
+.sidebar .widget:hover {
+    border-bottom:  4px solid #3498db;
+    box-shadow: 5px 5px 5px 0px grey(148, 137, 137, 0.55);
+}
+.sidebar widget h2{
+    padding:0;
+    margin:0 0 15px;
+    color:#3498db;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.sidebar.widget p:last-child{
+    margin:0;
+}
+.sidebar .widget p{
+    font-size: 14px;
+}
+.sidebar .widget p:last-child {
+    margin:0;
+}
+.blog {
+    width: 400px;
+    transform: translateX(-42rem) translateY(-50rem);
+}
+.widget .faq-selengkapnya{
+    color: #000;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    font-weight: 700;
+}
+.faq-selengkapnya:hover{
+    margin-left: 1opx;
+}
+
+.contuedo {
+    width: 200px;
+    padding: 25px;
+    background: #fff;
+    transition: all 0.5s ease;
+    border: 1px solid #dedede;
+    border-bottom: #000;
+    -webkit-box-shadow: 1px 1px 1px 0px grey(204,204,204,0.35);
+    -moz-box-shadow: 1px 1px 1px 0px grey(204,204,204,0.35);
+    box-shadow: 1px 1px 1px 0px grey(204,204,204,0.35);
+    border-radius: 15px 25px;
+    background-color: rgb(240,240,240);
+    
+} 
+.conteudo:hover{
+    min-width: 150px;
+    margin:0 0 25px -25px;
+    max-width: 250px;
+}    
+.conteudo h1{
+    padding:0;
+    margin:0 0 15px;
+    font-weight: normal;
+    color: #666;
+    font-family: Georgia;
+}
+.conteudo p:last-child{
+    margin: 0;
+}
+.conteudo .continue-lendo {
+    color:#000;
+    transition: all 1.5s ease;
+    text-decoration: none;
+    font-weight: 700;
+}
+.conteudo .continue-lendo:hover {
+    margin-left: 10px;
+}
+.post-info {
+    float: right;
+    font-size: 12px;
+    margin: 10px 0 15px;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 960){
+    .header {
+        position : inherit;
+    }
+    .wrap{
+        width:90%;
+        margin:25px auto;
+    }
+    .sidebar {
+        width:100%;
+        margin:25px 0 0;
+        float:right;
+    }
+    .sidebar .widget {
+        padding:5%;
+    }
+    .navmenu ul {
+        width: 100%;
+    }
+    nav.menu ul {
+        float:inheri;
+        margin:0;
+    }
+    nav.menu ul a {
+        padding:15px;
+        font-size: 16px;
+        border-top:  1px solid aqua;
+        border-bottom: 1px solid #16a085;
+    }
+    .blog{
+        width: 50%;
+    }
+    .conteudo {
+        float:inherit;
+        margin:0 auto 25px;
+        width: 50%;
+        border:1px solid #dedede;
+        padding:5%;
+        background: #fff;
+    }
+    .conteudo .continue-lendo:hover{
+        margin-left:0;
+    }
+}
+@media screen and (max-width:460px) {
+
+    .navmenu ul a {
+        padding:15px;
+        font-size: 14px;
+    }
+.sidebar {
+    display: none
+  }
+  .post-info {
+    display: none;
+  }
+
+  .conteudo{
+    margin:-25px auto;
+  }
+  .conteudo img {
+    margin:-5% 0 25px -5%;
+  }
+}
+
+.widget {
+    width: 200px;
+}
+
+.widget-pict{
+    width: 100px;
+}
+
+.widget{
+    display: right;
+    transform: translateY(7rem);
+}
+
+.deskripsi{
+    background: linear-gradient(to right,#0f869e,#85daeb)
+}
+
+.conteudo img{
+    border: 1px solid rgb(10, 128, 238, 0.55);
+    border-radius: 20px;
+}

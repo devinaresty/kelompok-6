@@ -1,0 +1,27 @@
+.head{
+    background: linear-gradient(to right,#0f869e,#85daeb)
+}
+
+.end{
+    background: linear-gradient(to right,#0f869e,#85daeb)
+   
+}
+
+form{
+    transform: translateY(-2rem);
+    width: 1325px;
+    size: 200cm;
+    
+}
+
+h1{
+    transform: translateY(1rem);
+}
+
+img{
+    transform: translateX(25rem);
+    width: 500px;
+    border: 1px solid rgb(10, 128, 238, 0.55);
+    border-radius: 20px;
+    
+}
